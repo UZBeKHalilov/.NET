@@ -1,41 +1,27 @@
-﻿using HomeWork.Sign_and_login;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Channels;
 using System.Threading.Tasks;
-using System.IO;
 
-namespace HomeWork
+namespace HomeWork.Sign_and_login
 {
 
-    //  Sign in 
-    //  Login in 
 
-    /*
-     * Sign => creat user(FulName,userName,password, phone)
-     * Login => userName and password 
-     */
-
-
-    /*
-     *  1) When creating a user, all data should be written to the file
-     *  2) let another user see the added users (read their information in the file)
-     *  3) when signing in, if the username is the same as the password written in the file, show the information about the user, if there is an error, create the user
-     *  4) user can delete another user
-    */
-
-    
-
-
-    static class Sign_Login
+    internal class PerfectedSign
     {
         static string project_Path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.ToString();
 
-        static FileInfo Users_txt = new FileInfo($"{project_Path}\\Users.txt");
+        static DirectoryInfo Users_Folder = new DirectoryInfo($"{project_Path}\\Sign and login");
 
-        static int user_Count = 0;
+        static int user_Count
+        {
+            get 
+            {
+                int file_Count = Directory.GetFiles(Users_Folder.FullName).Length;
+                return file_Count;
+            }
+        }
 
         public static void Start()
         {
@@ -112,22 +98,22 @@ namespace HomeWork
             }
             catch (Exception e)
             {
-                 SignEx.EnterError(e);
+                SignEx.EnterError(e);
 
                 CreateAccaunt();
             }
 
             #endregion
 
-            CheckFix_Users_txt(); // this method creates a Users.txt file if it doesn't exist.
-                       
-            using (StreamWriter stream_Writer = Users_txt.AppendText())
-            {
-                user_Count++;
+            CheckFix_Users_Directory(); // this method creates a Users.txt file if it doesn't exist.
 
+            FileInfo user_txt = new FileInfo($"{Users_Folder.FullName}\\{user.UserName}.txt");
+
+            using (StreamWriter stream_Writer = user_txt.AppendText())
+            {
                 stream_Writer.WriteLineAsync($"\t<---- [{user_Count}] - User ---->");
 
-                stream_Writer.WriteLineAsync(   $" Username :         {user.UserName}\n" +
+                stream_Writer.WriteLineAsync($" Username :         {user.UserName}\n" +
                                                 $" Full name :        {user.FullName}\n" +
                                                 $" Phone number : +998{user.PhoneNumber}\n" +
                                                 $" Password :         {user.Password}\n");
@@ -148,13 +134,13 @@ namespace HomeWork
             try
             {
                 Console.Write("\nEnter User name : ");
-                user.UserName = Console.ReadLine();              
+                user.UserName = Console.ReadLine();
 
                 if (!Search_UsersTxt(user.UserName))
-                {              
+                {
                     Console.Clear();
-                    SignEx.UserNotDetected();                    
-                }              
+                    SignEx.UserNotDetected();
+                }
 
                 Console.Write("\nEnter Password : ");
                 user.Password = Console.ReadLine();
@@ -179,7 +165,7 @@ namespace HomeWork
                     //        attempt--;
                     //}
 
-                    CreateAccaunt() ;
+                    CreateAccaunt();
                 }
                 #endregion
 
@@ -244,7 +230,7 @@ namespace HomeWork
                     break;
             }
         }
-        
+
         private static void Show_Another_User_Info()
         {
             User user = new User();
@@ -254,7 +240,7 @@ namespace HomeWork
                 Console.Write("User name : ");
                 user.UserName = Console.ReadLine();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 SignEx.EnterError(ex);
             }
@@ -279,21 +265,10 @@ namespace HomeWork
 
         #region DRY methods
 
-        public static void CheckFix_Users_txt()
+        public static void CheckFix_Users_Directory()
         {
-            if (!Users_txt.Exists)
-                Users_txt.Create().Close();
-        }
-
-
-        public static void RefreshUserCount()
-        {
-            CheckFix_Users_txt();
-
-            using(var Reader = new StreamReader(Users_txt.FullName))
-            {
-                
-            }
+            if (!Users_Folder.Exists)
+                Users_Folder.Create();
         }
 
 
@@ -309,12 +284,12 @@ namespace HomeWork
 
         private static bool Search_UsersTxt(string SearchThis)
         {
-            string Text = File.ReadAllText(Users_txt.FullName);
+            string Text = File.ReadAllText(Users_Folder.FullName);
 
             return Text.Contains(SearchThis);
         }
 
-
+        // color
         public static void Console_Green(string text)
         {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -331,7 +306,7 @@ namespace HomeWork
 
             Console.WriteLine($"\n\t{text}\n");
 
-            Console.ForegroundColor = ConsoleColor.White ;
+            Console.ForegroundColor = ConsoleColor.White;
         }
 
 
@@ -340,9 +315,9 @@ namespace HomeWork
             Console.ForegroundColor = ConsoleColor.Yellow;
 
             Console.WriteLine($"\n\t{text}\n");
-            
+
             Console.ForegroundColor = ConsoleColor.White;
         }
         #endregion
-    }    
+    }
 }
