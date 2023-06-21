@@ -1,0 +1,6 @@
+	<---- [1] - User ---->
+ Username :     UZBeKHalilov
+ Full name :    Abdulloh 
+ Phone number : 998168841
+ Password :     8cd218fad14e40027934089b13804e11234a90e45e8b211ae775a384bb55d836
+

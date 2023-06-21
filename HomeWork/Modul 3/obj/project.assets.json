@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KHalilov\\Documents\\GitHub\\HomeWork\\HomeWork\\HomeWork.csproj",
+      "projectUniqueName": "C:\\Users\\KHalilov\\Documents\\GitHub\\HomeWork\\Modul 3\\HomeWork.csproj",
       "projectName": "HomeWork",
-      "projectPath": "C:\\Users\\KHalilov\\Documents\\GitHub\\HomeWork\\HomeWork\\HomeWork.csproj",
+      "projectPath": "C:\\Users\\KHalilov\\Documents\\GitHub\\HomeWork\\Modul 3\\HomeWork.csproj",
       "packagesPath": "C:\\Users\\KHalilov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KHalilov\\Documents\\GitHub\\HomeWork\\HomeWork\\obj\\",
+      "outputPath": "C:\\Users\\KHalilov\\Documents\\GitHub\\HomeWork\\Modul 3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KHalilov\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
