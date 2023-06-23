@@ -1,0 +1,15 @@
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\obj\Debug\net7.0\Department-1.csproj.AssemblyReference.cache
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\obj\Debug\net7.0\Department-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\obj\Debug\net7.0\Department-1.AssemblyInfoInputs.cache
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\obj\Debug\net7.0\Department-1.AssemblyInfo.cs
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\obj\Debug\net7.0\Department-1.csproj.CoreCompileInputs.cache
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\bin\Debug\net7.0\Department-1.exe
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\bin\Debug\net7.0\Department-1.deps.json
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\bin\Debug\net7.0\Department-1.runtimeconfig.json
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\bin\Debug\net7.0\Department-1.dll
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\bin\Debug\net7.0\Department-1.pdb
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\obj\Debug\net7.0\Department-1.dll
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\obj\Debug\net7.0\refint\Department-1.dll
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\obj\Debug\net7.0\Department-1.pdb
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\obj\Debug\net7.0\Department-1.genruntimeconfig.cache
+C:\Users\KHalilov\Documents\GitHub\HomeWork\Modul 3\Department-1\Department-1\obj\Debug\net7.0\ref\Department-1.dll

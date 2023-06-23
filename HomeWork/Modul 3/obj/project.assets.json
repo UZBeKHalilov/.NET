@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KHalilov\\Documents\\GitHub\\HomeWork\\Modul 3\\HomeWork.csproj",
+      "projectUniqueName": "C:\\Users\\KHalilov\\Documents\\GitHub\\.NET\\HomeWork\\Modul 3\\HomeWork.csproj",
       "projectName": "HomeWork",
-      "projectPath": "C:\\Users\\KHalilov\\Documents\\GitHub\\HomeWork\\Modul 3\\HomeWork.csproj",
+      "projectPath": "C:\\Users\\KHalilov\\Documents\\GitHub\\.NET\\HomeWork\\Modul 3\\HomeWork.csproj",
       "packagesPath": "C:\\Users\\KHalilov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KHalilov\\Documents\\GitHub\\HomeWork\\Modul 3\\obj\\",
+      "outputPath": "C:\\Users\\KHalilov\\Documents\\GitHub\\.NET\\HomeWork\\Modul 3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KHalilov\\AppData\\Roaming\\NuGet\\NuGet.Config",
