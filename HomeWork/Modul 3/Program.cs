@@ -38,11 +38,22 @@ namespace HomeWork
 
             #region Sign and Login
 
-            Sign_Login.Start();
+            // Sign_Login.Start();
 
             #endregion
 
+            #region Threads
 
+            // Task 1
+            //Threads.Task1_Start();
+
+            // Task 2
+            Threads.Task2_Start();
+
+            // Task 3
+            // Write Task 2 to file
+
+            #endregion
         }
     }
 }
